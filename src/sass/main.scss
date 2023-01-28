@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+//VARIABLES
+@import 'vars';
+//FONTS
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+  /*como llamarla 
+  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Covered By Your Grace', cursive;
+  font-family: 'Crete Round', serif;*/
+
+
+.body{
+       background-color: #f7f1e3; }
+
+
+.carrito{
+    color: #ffffff;
+    margin: 50px;
+}
+
+.menu{
+    background: linear-gradient(180deg, rgba(34,112,147,1) 60%, #f7f1e3 100%);
+    
+    .logo{
+        max-width:25vh;
+        max-height: 21vh;
+        margin: 0em 3em;
+        
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        transform: skewY(-1deg);
+        background-color: #f7f1e3;
+        padding: 20px 0px;
+    }
+    a{
+       border-style: solid;
+       border-color: #ff793f;
+       border-width: 3px;
+       font-size: 18px;
+       padding: 10px 60px;
+       border-radius: 5px;
+       font-family: 'Noto Sans SC', sans-serif;
+       font-weight: 600;
+       color: #b33939;
+    }
+    a:hover {
+        border-color: #cd6133;
+        border-width: 4px;
+        cursor: pointer;
+        
+
+      }
+}
+
+.saludoPrincipal{
+    margin: 4rem ;
+    font-family: 'Crete Round', serif;
+    background-image: url(../assets/botanas.avif);
+    
+    .bienvenido{
+        margin-top: 150px ;
+        font-size: xx-large;
+        background: rgb(253, 253, 253, .5);
+        ;
+    }
+    .subBienvenido{
+        font-size: large;
+        display: flex;
+        justify-content:center ;
+        margin-bottom: 150px;
+        background: rgb(253, 253, 253, .5);
+    }
+    
+
+}
+@media (max-width:$tablet){
+    .menu{
+        
+        .logo{
+            margin-left: 1em;
+           }
+        ul{
+            a{
+                padding: 2px 4px;
+                border-width: 2px;
+                font-size: 14px;
+            }
+        }
+    }
+   
+  .saludoPrincipal{
+    .bienvenido{
+        font-size: x-large;
+    }
+  }
+}
+
+    
+
