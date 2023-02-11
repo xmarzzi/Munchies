@@ -19,7 +19,7 @@
 
 
 .body{
-       background-color: #f7f1e3; }
+       background-color: #fff; }
 
 
 .carrito{
@@ -28,12 +28,15 @@
 }
 
 .menu{
-    background: linear-gradient(180deg, rgba(34,112,147,1) 60%, #f7f1e3 100%);
+    background: linear-gradient(180deg, rgba(34,112,147,1) 60%, #fff 100%);
     
     .logo{
         max-width:25vh;
         max-height: 21vh;
         margin: 0em 3em;
+        .logo-borde{
+            border-style: none;
+        }
         
     }
     ul{
@@ -42,29 +45,28 @@
         justify-content: space-around;
         width: 100%;
         transform: skewY(-1deg);
-        background-color: #f7f1e3;
+        background-color: #fff;
         padding: 20px 0px;
     }
-    a{
-       border-style: solid;
-       border-color: #ff793f;
-       border-width: 3px;
-       font-size: 18px;
-       padding: 10px 60px;
-       border-radius: 5px;
-       font-family: 'Noto Sans SC', sans-serif;
-       font-weight: 600;
-       color: #b33939;
-    }
-    a:hover {
-        border-color: #cd6133;
-        border-width: 4px;
+    
+    .nav{
+        border-style: solid;
+        border-color: #ff793f;
+        border-width: 3px;
+        font-size: 18px;
+        padding: 20px 60px;
+        border-radius: 5px;
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight: 600;
+        color: #b33939;
+
+     }
+    li:hover {
         cursor: pointer;
-        
+        font-size: 20px;
 
       }
 }
-
 .saludoPrincipal{
     margin: 4rem ;
     font-family: 'Crete Round', serif;
@@ -84,8 +86,21 @@
         background: rgb(253, 253, 253, .5);
     }
     
-
+    
 }
+    .catalogo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+
+    .card{
+        max-width: 12rem;
+        margin: 1rem;
+    }
+
+
 @media (max-width:$tablet){
     .menu{
         
@@ -93,12 +108,15 @@
             margin-left: 1em;
            }
         ul{
-            a{
+            li{
                 padding: 2px 4px;
-                border-width: 2px;
                 font-size: 14px;
             }
         }
+        li:hover {
+            border-style: none;
+            font-size: 14px;
+          }
     }
    
   .saludoPrincipal{
@@ -106,7 +124,7 @@
         font-size: x-large;
     }
   }
+
 }
 
-    
 
